@@ -12,17 +12,9 @@ const Loaders = () => {
                 </Grid>
                 <Grid item xs={12} sm={8} md={5} lg={6} height={"100%"}>
                     <Stack spacing={"1rem"}>
-                        {/* {Array.from({ length: 10 }).map((_, index) => {
-                            <Skeleton key={index} variant="rectangular" height={"5rem"} />
-                        })} */}
-                        <Skeleton variant='rounded' height={"5rem"} />
-                        <Skeleton variant='rounded' height={"5rem"} />
-                        <Skeleton variant='rounded' height={"5rem"} />
-                        <Skeleton variant='rounded' height={"5rem"} />
-                        <Skeleton variant='rounded' height={"5rem"} />
-                        <Skeleton variant='rounded' height={"5rem"} />
-                        <Skeleton variant='rounded' height={"5rem"} />
-                        <Skeleton variant='rounded' height={"5rem"} />
+                        {Array.from({ length: 10 }).map((_, index) => {
+                            return <Skeleton key={index} variant="rounded" height={"5rem"} />
+                        })}
                     </Stack>
                 </Grid>
                 <Grid item md={4} lg={3} sx={{
