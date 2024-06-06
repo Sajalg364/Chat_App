@@ -13,10 +13,25 @@ export const sampleChats = [
                 "https://www.w3schools.com/howto/img_avatar.png",
                 "https://www.w3schools.com/howto/img_avatar.png",
                ],
-       name: "parth",
+       name: "sajal2",
        _id: "2",
        groupChat: "true",
        members: ["1","2"],
+    },
+
+]
+
+
+export const sampleUsers = [
+    {
+       avatar: ["https://www.w3schools.com/howto/img_avatar.png"],
+       name: "sajal",
+       _id: "1",
+    },
+    {
+       avatar: ["https://www.w3schools.com/howto/img_avatar.png"],
+       name: "sajal2",
+       _id: "2",
     },
 
 ]

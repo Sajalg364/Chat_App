@@ -32,7 +32,7 @@ const ChatItem = ({
                     position: "relative"
                 }}
             >
-                <AvatarCard avatar={avatar} max={2}/>
+                <AvatarCard avatar={avatar}/>
                 <Stack>
                     <Typography>{name}</Typography>
                     {

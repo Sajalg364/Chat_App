@@ -7,6 +7,7 @@ import Header2 from './Header2';
 import ChatList from '../specific/ChatList';
 import { sampleChats } from '../constants/sampleData';
 import { useParams } from 'react-router-dom';
+import Profile from '../specific/Profile';
 
 const AppLayout = () => WrappedComponent => {
     return (props) => {
@@ -19,11 +20,11 @@ const AppLayout = () => WrappedComponent => {
         }
 
         return (
-            <div>
+            <>
                 <Title />
                 <Header />
 
-                <Grid container height={"calc(100vh-4rem)"}>
+                <Grid container height={"calc(100vh - 4rem)"}>
                     <Grid
                         item
                         sm={4} md={3}
@@ -47,23 +48,23 @@ const AppLayout = () => WrappedComponent => {
                         item
                         xs={12} sm={8} md={5} lg={6}
                         height={"100%"}
-                        bgcolor="cyan">
-                        <WrappedComponent {...props} />
-                    </Grid>
-                    <Grid
-                        item
-                        md={4} lg={3}
-                        sx={{
-                            display: { xs: "none", md: "block" },
-                            bgcolor: (0, 0, 0, 0.85),
-                            padding: "2rem",
-                        }}
-                        height={"100%"}>
-                        Last
-                    </Grid>
+                    >
+                    <WrappedComponent {...props} />
                 </Grid>
-
-            </div>
+                <Grid
+                    item
+                    // minHeight={"100%"}
+                    md={4} lg={3}
+                    sx={{
+                        display: { xs: "none", md: "block" },
+                        bgcolor: "black",
+                        padding: "2rem",
+                    }}
+                    height={"100%"}>
+                    <Profile />
+                </Grid>
+            </Grid >
+            </>
         );
     };
 };
