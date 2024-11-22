@@ -72,7 +72,7 @@ Follow these steps to set up and run the project locally:
 
 3.  **Set Up Environment Variables:**
 
-    Configure the following environment variables by creating a .env file in the root of Forntend and Backend Folder:
+    Configure the following environment variables by creating a .env file in the root of Frontend and Backend Folder:
 
     Frontend Folder :
 
@@ -140,7 +140,7 @@ Open `http://localhost:5173` in your web browser.
 
 ## Author
 
-Akash Deep \
+Sajal Mahajan \
 Email: contact.sajalg903090@gmail.com \
 LinkedIn : https://www.linkedin.com/in/sajal-mahajan-a58b9524a/
 
